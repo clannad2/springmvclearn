@@ -1,4 +1,4 @@
-package com.cebbank.liuxiaoming.springmvc;
+package com.cebbank.liuxiaoming.springmvc.handler;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
