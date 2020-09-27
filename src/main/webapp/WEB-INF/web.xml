@@ -2,6 +2,24 @@
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+ <servlet>
+   <servlet-name>springDispatcherServlet</servlet-name>
+   <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<!--     可使用默认值 WEB-INF/<servlet-name>-servlet.xml 不用配置初始化参数-->
+<!--   配置DispatcherServlet的初始化参数：配置springmvc配置文件的位置和名称-->
+<!--   <init-param>-->
+<!--     <param-name>contextConfigLocation</param-name>-->
+<!--     <param-value>classpath:springmvc.xml</param-value>-->
+<!--   </init-param>-->
+<!--     servlet加载时被创建-->
+   <load-on-startup>1</load-on-startup>
+ </servlet>
+  <servlet-mapping>
+    <servlet-name>springDispatcherServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
 </web-app>
