@@ -11,6 +11,24 @@
     <title>Title</title>
 </head>
 <body>
+<br><br>
+    <form action="springmvc/testRest/1" method="post">
+        <input type="hidden" name="_method" value="PUT"/>
+        <input type="submit" value="test rest PUT"/>
+    </form>
+<br><br>
+    <form action="springmvc/testRest/1" method="post">
+        <input type="hidden" name="_method" value="DELETE"/>
+        <input type="submit" value="test rest delete"/>
+    </form>
+<br><br>
+    <form action="springmvc/testRest" method="post">
+        <input type="submit" value="test rest post">
+    </form>
+<br><br>
+    <a href="springmvc/testRest/1">test rest get</a>
+<br><br>
+
     <a href="springmvc/testPathVariable/2">testPathVariable</a>
     <br><br>
     <a href="helloworld">hello world</a>
