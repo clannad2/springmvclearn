@@ -11,7 +11,50 @@
     <title>Title</title>
 </head>
 <body>
-<br><br>
+
+    <a href="springmvc/testView">testView</a>
+    <br><br>
+    <form action="springmvc/testModelAttribute" method="post">
+        <input type="hidden" name="id" value="1">
+        username:<input type="text" name="username" value="Tom"/>
+        <br>
+        email:<input type="text" name="email" value="Tom@guigu.com"/>
+        <br>
+        age:<input type="text" name="age" value="13">
+        <br>
+        <input type="submit" value="submit"/>
+    </form>
+    <br><br>
+    <a href="springmvc/testMap">testMap</a>
+    <br><br>
+    <a href="springmvc/testSessionAttributes">testSessionAttributes</a>
+    <br><br>
+    <a href="springmvc/testModeAndView">testModeAndView</a>
+    <br><br>
+    <a href="springmvc/testServletAPI">testServletAPI</a>
+    <br><br>
+    <form action="springmvc/testPojo" method="post" charset="UTF-8">
+        username:<input type="text" name="username"/>
+        <br>
+        password:<input type="password" name="password"/>
+        <br>
+        email:<input type="text" name="email"/>
+        <br>
+        age:<input type="text" name="age">
+        <br>
+        city:<input type="text" name="address.city">
+        <br>
+        province:<input type="text" name="address.province">
+        <br>
+        <input type="submit" value="submit"/>
+    </form>
+    <br><br>
+    <a href="springmvc/testCookileValue">testCookileValue</a>
+    <br><br>
+    <a href="springmvc/testRequestHeader">testRequestHeader</a>
+    <br><br>
+    <a href="springmvc/testRequestParams?username=xiaoming&age=11">testRequestParams</a>
+    <br><br>
     <form action="springmvc/testRest/1" method="post">
         <input type="hidden" name="_method" value="PUT"/>
         <input type="submit" value="test rest PUT"/>

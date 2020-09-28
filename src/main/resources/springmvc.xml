@@ -13,4 +13,21 @@
           <property name="suffix" value=".jsp"/>
      </bean>
 
+<!--     配置BeanNameViewResolver视图解析器，使用视图名字解析视图-->
+     <bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+<!--          通过order属性定义视图的优先级，值越小，优先级越高-->
+         <property name="order" value="100"/>
+     </bean>
+<!--     <mvc:annotation-driven>-->
+<!--          <mvc:message-converters register-defaults="true">-->
+<!--               &lt;!&ndash; 启动Spring MVC的注解功能，完成请求和注解POJO的映射 注解请求映射-->
+<!--               默认是ISO-88859-1，避免乱码这里设置为UTF-8 &ndash;&gt;-->
+<!--               <bean class="org.springframework.http.converter.StringHttpMessageConverter">-->
+<!--                    <property name="supportedMediaTypes" value="text/html;charset=UTF-8" />-->
+<!--               </bean>-->
+<!--          </mvc:message-converters>-->
+<!--     </mvc:annotation-driven>-->
+<!--     可直接跳转转发页面，不需经过handler-->
+     <mvc:view-controller path="/success" view-name="success"/>
+     <mvc:annotation-driven/>
 </beans>

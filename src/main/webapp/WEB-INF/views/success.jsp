@@ -13,5 +13,20 @@
 <body>
 
     <h4>success page</h4>
+
+    date:${requestScope.date}
+<br><br>
+    names:${requestScope.names}
+
+    <br><br>
+    request user:${requestScope.user}
+    <br>
+    request abc:${requestScope.abc}
+    <br>
+    request shchool:${requestScope.school}
+    <br><br>
+    session user:${sessionScope.user}
+    <br>
+    session school:${sessionScope.school}
 </body>
 </html>
