@@ -19,6 +19,12 @@ import java.util.Map;
 public class SpringMvcTest {
     private static final String SUCCESS="success";
 
+    @RequestMapping("/testRedirect")
+    public String testRedirect(){
+        System.out.println("testRedirect");
+        return "redirect:/index.jsp";
+    }
+
     @RequestMapping("/testView")
         public String testView(){
         return "helloView";
@@ -32,6 +38,7 @@ public class SpringMvcTest {
 
     @ModelAttribute
     public void getUser(@RequestParam(value = "id",required = false) Integer id,Map<String,Object> map){
+        System.out.println("ModelAttribute");
         if (id!=null){
             User user = new User(1,"Tom","123456","Tom@guigui.com",13,null);
             System.out.println("从数据库获取对象"+user);

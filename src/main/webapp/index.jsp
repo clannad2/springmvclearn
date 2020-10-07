@@ -11,7 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-
+    <a href="springmvc/testRedirect">testRedirect</a>
+    <br><br>
     <a href="springmvc/testView">testView</a>
     <br><br>
     <form action="springmvc/testModelAttribute" method="post">
